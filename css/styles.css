@@ -1,0 +1,200 @@
+/* Navigation Bar Styling */
+nav {
+    background-color: #333; /* Dark background */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the items */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* White text */
+    font-size: 16px;
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Accent color on hover */
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #0073e6;
+    border-radius: 5px;
+}
+
+/* Section styling */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section heading */
+section h2 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs and strong tags for details */
+section p {
+    margin: 10px 0;
+}
+
+section p strong {
+    color: #0073e6;
+}
+
+/* Placeholder image styling */
+section img {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #0073e6;
+    border-radius: 5px;
+}
+
+/* Section styling */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section heading */
+section h2 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+/* Placeholder image styling */
+section img {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
