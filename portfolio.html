@@ -1,15 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal Portfolio Website">
-  <title>Portfolio - Home</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <script defer src="js/scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Additional styles for portfolio page */
+        .project {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .project img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-info {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+
+        .project h3 {
+            margin: 0;
+        }
+
+        .project p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            right: 15px;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <!-- Content goes here -->
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section>
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="images/Tradebucks.jpg.png" alt="Trade Bucks Project Image">
+            <div class="project-info">
+                <h3>Trade Bucks</h3>
+                <p>A crypto trading platform with a built-in bot that helps users trade using the dollar cost averaging strategy.</p>
+                <a href="#" class="button" id="openModalBtn">Quick View</a>
+                <a href="project-details.html" class="button" id="openModalBtn">View Details</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Trade Bucks</h2>
+            <p>This project was developed in the first year as part of a team software project. It’s a crypto trading platform featuring a bot that helps users trade using the dollar cost averaging strategy. You can find more information about the project by visiting the website.</p>
+            <a href="https://tradebucks.netlify.app/" target="_blank" class="button">Visit Trade Bucks</a>
+            <a href="project-details.html" target="_blank" class="button">View Details</a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Murtaza Alam</p>
+    </footer>
+
+    <script>
+        // Modal functionality
+        var modal = document.getElementById("projectModal");
+        var btn = document.getElementById("openModalBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
